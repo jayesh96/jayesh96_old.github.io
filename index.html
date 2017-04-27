@@ -1,246 +1,90 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
   <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
+  <head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/main.css">
+  
 
-      <style type="text/css">
-      	body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
 
-main {
-  flex: 1 0 auto;
-}
 
-h1.title,
-.footer-copyright a {
-  font-family: 'Architects Daughter', cursive;
-  text-transform: uppercase;
-  font-weight: 900;
-}
 
-/* start welcome animation */
+  </head>
 
-body.welcome {
-  background: #512da8;
-  overflow: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-.welcome .splash {
-  height: 0px;
-  padding: 0px;
-  border: 130em solid #039be5;
-  position: fixed;
-  left: 50%;
-  top: 100%;
-  display: block;
-  box-sizing: initial;
-  overflow: hidden;
-
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, borderRadius 0.2s 2.3s linear forwards;
-}
-
-.welcome #welcome {
-  background: #000 ;
-  width: 56px;
-  height: 56px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  overflow: hidden;
-  opacity: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards, hide 2s 2.9s ease forwards;
-}
-
-/* moveIn */
-.welcome header,
-.welcome a.btn {
-  opacity: 0;
-  animation: moveIn 2s 3.1s ease forwards;
-}
-
-@keyframes init {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 56px;
-    height: 56px;
-    margin-top: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes puff {
-  0% {
-    top: 100%;
-    height: 0px;
-    padding: 0px;
-  }
-  100% {
-    top: 50%;
-    height: 100%;
-    padding: 0px 100%;
-  }
-}
-
-@keyframes borderRadius {
-  0% {
-    border-radius: 50%;
-  }
-  100% {
-    border-radius: 0px;
-  }
-}
-
-@keyframes moveDown {
-  0% {
-    top: 50%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    background: #fff;
-    top: 100%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 50%;
-    background: #fff;
-  }
-}
-
-@keyframes materia {
-  0% {
-    background: #fff;
-  }
-  50% {
-    background: #039be5;
-    top: 26px;
-  }
-  100% {
-    background: #fff;
-    width: 100%;
-    height: 64px;
-    border-radius: 0px;
-    top: 26px;
-  }
-}
-
-@keyframes moveIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes hide {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-      </style>
-    </head>
-
-    <body class="welcome">
+  <body class="welcome">
   <span id="splash-overlay" class="splash"></span>
   <span id="welcome" class="z-depth-4"></span>
 
   <header class="navbar-fixed">
-    <nav class="row deep-purple darken-3">
-      <div class="col s12">
-        <ul class="right">
-          <li class="right">
-            <a href="" target="_blank" class="fa fa-facebook-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
-          </li>
-          <li class="right">
-            <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <nav class="row deep-purple darken-3">
+  <div class="col s12">
+  <ul class="right">
+  <li class="right">
+  <a href="" target="_blank" class="fa fa-facebook-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+  </li>
+  <li class="right">
+  <a href="" target="_blank" class="fa fa-github-square fa-2x waves-effect waves-light"><span class="icon-text"></span></a>
+  </li>
+  </ul>
+  </div>
+  </nav>
   </header>
 
   <main class="valign-wrapper">
-    <span class="container grey-text text-lighten-1 ">
+  <span class="container grey-text text-lighten-1 ">
 
-      <p class="flow-text">Good Evening</p>
-      <h1 class="title grey-text text-lighten-3">Jayesh Bidani</h1>
-      <blockquote class="flow-text">Click Below to Check my Resume</blockquote>
+  <h3 style="color:#fff"><p class="animatedjs flow-text"></p></h3>
+  <h1 class="title grey-text text-lighten-3">Jayesh Bidani</h1>
+  <p class="flow-text">Click Below to Check my Resume</p>
 
-      <div class="left-align">
-        <!-- Dropdown Trigger -->
-        <a class="btn" href="https://drive.google.com/open?id=0B1tR5cs78d3-X1BYa0lhNWIyWTg">Download Resume<i class="material-icons right"></i></a>
+  <div class="left-align">
+  <!-- Dropdown Trigger -->
+  <a class="btn" href="https://drive.google.com/open?id=0B1tR5cs78d3-X1BYa0lhNWIyWTg">Download Resume<i class="material-icons right"></i></a>
 
-        
-      </div>
 
-    </span>
+  </div>
+
+  </span>
   </main>
 
   <div class="fixed-action-btn">
-    <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
-      <i class="large material-icons">message</i>
-    </a>
+  <a href="#message" class="modal-trigger btn btn-large btn-floating amber waves-effect waves-light">
+  <i class="material-icons">add</i>
+  </a>
   </div>
 
   <div id="message" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>Contact</h4>
-      <p>coming soon...</p>
-    </div>
-    <div class="modal-footer">
-      <a href="" class="modal-action modal-close waves-effect btn-flat">close</a>
-    </div>
+  <div class="modal-content">
+  <h4>Contact</h4>
+  <p>coming soon...</p>
+  </div>
+  <div class="modal-footer">
+  <a href="" class="modal-action modal-close waves-effect btn-flat">close</a>
+  </div>
   </div>
 
   <footer class="page-footer deep-purple darken-3">
-    <div class="footer-copyright deep-purple darken-4">
-      <div class="container">
-        
-      </div>
-    </div>
+  <div class="footer-copyright deep-purple darken-4">
+  <div class="container">
+
+  </div>
+  </div>
   </footer>
 
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
-
-<script type="text/javascript">
-	$(document).ready(function(){
+  <script type="text/javascript">
+  $(document).ready(function(){
   $('.modal-trigger').leanModal();
-});
-</script>
+  });
+  </script>
 
-    </body>
+  </body>
   </html>
